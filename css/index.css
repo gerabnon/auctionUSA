@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|McLaren|Muli|Oswald|Permanent+Marker&display=swap');
+
+:root {
+    font-family: 'Muli', sans-serif;
+    --main-color:black;
+    --accent-color: grey;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5,header,p,div,nav,footer {
+    margin: 2 px;
+    padding: 0;
+}
+header nav .logo {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: gold;
+}
+header nav .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase ;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover{
+    border: 1px solid var(--accent-color)
+}
+
+@media (min-width:550px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .menu:[
+        flex: 1px;
+    ]
+
+}
+div .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+header .banner {
+    background-image: url(../foto/ger.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+
+}
+.image {
+    position: relative;
+    width: 100%;
+    }
+
+h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute ;
+    font-size: 2em;
+    font-family: impact, fantasy;
+    text-align: center ;
+    vertical-align: auto;
+    flex-direction: column
+    text-transform: uppercase;
+    color: white;
+
+    }
+
+    h2 { text-align: center;
+    color: goldenrod;
+    font-size: 2em;
+    font-family: 'Bowlby One SC', cursive;
+    margin: auto;
+    }
+h5 .a {
+    background-repeat:space;
+
+}
+ul.grid {
+list-style: none  ;
+margin:0;
+padding:0;:
+}
+ul.grid:after{
+display:block;
+width:100%;
+height:0px;
+clear:both;
+}
+ul.grid li {
+display: block;
+float:left;
+width:25%;
+height: 150px;
+overflow:hidden;
+}
+ul.grid li img {
+display:block;
+max-width:100%;
+height: auto; /
+margin:1em;
+}
+
+ div.container {
+width: 80%;
+max-width: 960px;
+margin: 0 auto;
+}
+img {
+width: 80%;
+display: inline-block;
+}
+img {
+max-width: 100%;
+display: inline-block;
+}
+
+h3 { text-align: center;
+    color: goldenrod;
+    font-size: 2em;
+    font-family: 'Bowlby One SC', cursive;
+    margin: auto;
+
+    }
+
+
+
+
+
+
