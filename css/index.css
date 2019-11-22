@@ -7,17 +7,21 @@ body {
     margin: auto;
 }
 
-h1,h2,h3,h4,h5,header,p,div,nav,footer {
-    margin: 2 px;
+h1,h2,h3,h4,h5,header,p,div,nav,footer,ul,li {
+    margin: inherit;
     padding: 0;
     display: block;
-}
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+
+}   
 
 header nav .logo {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 3rem;
-    color: gold;
+    color: red;
 }
 
 header nav .menu {
@@ -25,14 +29,17 @@ header nav .menu {
     list-style-type: none;
     justify-content: space-around;
     padding: 0;
+    width: 100%;
+    
 }
 
 header nav .menu a {
     text-decoration: none;
     text-transform: uppercase ;
-    color: var(--main-color);
+    color: red
     border: 1px solid transparent;
     padding: 5px;
+    width: 100%;
 }
 
 header nav .menu a:hover {
@@ -51,6 +58,7 @@ div .buttons {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    width: 100%;
 }
 
 header .banner {
@@ -58,6 +66,8 @@ header .banner {
     background-position: center;
     background-size: cover;
     min-height: 600px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .image {
@@ -65,88 +75,72 @@ header .banner {
     width: 100%;
 }
 
-h1 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute ;
-    font-size: 2em;
-    font-family: impact, fantasy;
-    text-align: center ;
-    vertical-align: auto;
-    flex-direction: column;
-    text-transform: uppercase;
-    color: white;
-}
-
 h2 {
     text-align: center;
-    color: goldenrod;
+    color: rgb(243, 7, 7);
     font-size: 2em;
     font-family: 'Bowlby One SC', cursive;
     margin: auto;
+    display: block;
+    background-size: contain;
+    width: 100%;
 }
 
 h5 .a {
     background-repeat: space;
 }
 
-ul.grid {
+ul.autosList {
     list-style: none ;
     margin: 0;
     padding: 0;
-    : }
+    color:royalblue;
+    width: 100%; 
+    border-radius: 10px;
+    text-align: start;
+    }
 
-ul.grid:after {
+
+ul.autosList:after {
     display: block;
     width: 100%;
     height: 0px;
     clear: both;
+    border-radius: 10px;
 }
 
-ul.grid li {
+ul.autosList li {
     display: block;
     float: left;
     width: 25%;
     height: 150px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
-ul.grid li img {
+ul.autosList li img {
     display: block;
     max-width: 100%;
     height: auto;
-    / margin: 1em;
-}
-
-div.container {
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
+    margin: 1em;
 }
 
 img {
     width: 80%;
     display: inline-block;
-}
-
-img {
     max-width: 100%;
-    display: inline-block;
+    border-radius: 20px;
+    background-color: black;
+
 }
 
 .auctionexport {
     text-align: center;
-    color: goldenrod;
+    color: rgb(236, 12, 12);
     margin: 20px;
     font: 2em;
     display: block;
     border-radius: 20px;
-}
-
-a {
-    color: green
-}
 }
 
 .auctionexport img {
@@ -162,7 +156,7 @@ a {
 h4 {
     text-align: center;
     font-size: 3em;
-    color: goldenrod;
+    color: rgb(243, 6, 6);
     display: block;
 }
 
@@ -173,14 +167,7 @@ h4 {
     padding: 0px 0px;
 }
 
-.formavidpravky {
-    width: 400px;
-    height: 250px;
-    background-color: rgb(42, 20, 163);
-    margin: 20px auto 0 auto;
-    text-align: center;
-    border-radius: 20px;
-}
+
 
 input[type="text" ] {
     width: 800;
@@ -203,12 +190,12 @@ input[type="text" ] {
 .submit :hover {
     transition: all 0.5s;
     background: #fff;
-    color: rgb(35, 24, 46);
+    color: rgb(248, 3, 3);
 }
 
 h3 {
     text-align: center;
-    color: goldenrod;
+    color: rgb(243, 6, 6);
 }
 
 .socm {
@@ -241,5 +228,30 @@ h3 {
 
 footer {
     text-align: center;
-    color: black;
+    color: rgb(253, 13, 13);
+     size: 2em;
 }
+
+   div .form-check {
+       color: blue;
+   }
+
+   @media (min-width: 100%) {
+    h2 {
+    display: flex;
+    }
+   }
+
+   @media (max-width: 770px) {
+       ul.autosList {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr  ;
+           grid-gap: 0px;
+           justify-items: flex-start;
+    
+   }
+   }
+   container {
+       padding: auto
+       ;
+   }
